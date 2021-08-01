@@ -32,7 +32,7 @@
 import pandas as pd
 import streamlit as st
 
-import plotly.express as px
+
 #######################################
 
 
@@ -179,64 +179,4 @@ with stats_container:
 
 
 
-	# 7 --- creating columns inside a container 
-	#		(you can create more than 2)
-	bar_col, pie_col = st.beta_columns(2)
-
-	# in order to display things inside columns, replace the st. with the column name when creating components
-
-	# preparing data to display on pie chart
-	user_type = data['usertype'].value_counts().reset_index()
-	user_type.columns = ['user type','count']
-
-
-
-
-
-
-	# 8 --- Creating plots and charts
-	#		The simplest way is to use the built in Streamlit plots
-	#		You can also use other plotting libraries with Streamlit
-	#		The pie chart below is an example of using Plotly
-
-
-	# preparing data to display in a bar chart
-	start_location = data['start station name'].value_counts()
-
-	# don't forget to add titles to your plots
-	bar_col.subheader('Trip duration in minutes per start station')
-
-	# This is the way to make a very simple bar chart 
-	# Visit https://docs.streamlit.io/en/stable/api.html for more information on what other plots and charts are possible
-	bar_col.bar_chart(start_location)
-
-
-
-
-
-	# don't forget to add titles to your plots
-	pie_col.subheader('How many of the users were subscribed?')
-
-	# This is an example of a plotly pie chart
-	fig = px.pie(user_type, values='count', names = 'user type', hover_name='user type')
-
-	# TODO: change the values of the update_layout function and see the effect
-	fig.update_layout(showlegend=False,
-		width=400,
-		height=400,
-		margin=dict(l=1,r=1,b=1,t=1),
-		font=dict(color='#383635', size=15))
-
-	# this function adds labels to the pie chart
-	# for more information on this chart, visit: https://plotly.com/python/pie-charts/
-	fig.update_traces(textposition='inside', textinfo='percent+label')
-
-	# after creating the chart, we display it on the app's screen using this command
-	pie_col.write(fig)
-
-
-
-
-
-
-
+	
