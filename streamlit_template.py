@@ -135,10 +135,7 @@ with stats_container:
 	#		Steamlit has built in components to collect input from users
 
 
-	# collect input using free text
-	# the input of the user will be saved to the variable called "text_input"
-	text_input = st.text_input("You can collect free text input from the user", 'Something')
-
+	
 
 	# collect input usinga list of options in a drop down format
 	# TODO: change the option list to end_station_list and see what happens
