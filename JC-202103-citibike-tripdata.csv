@@ -1,4 +1,4 @@
-tripduration,starttime,stoptime,start station id,start station name,start station latitude,start station longitude,end station id,end station name,end station latitude,end station longitude,bikeid,usertype,birth year,gender
+tripduration,starttime,stoptime,start station id,team ,start station latitude,start station longitude,end station id,end station name,end station latitude,end station longitude,bikeid,usertype,birth year,gender
 369,07:46.4,13:55.6,3202,Pacers Gaming,40.7272235,-74.0337589,3639,Harborside,40.7192517,-74.034234,43798,Customer,1970,0
 102,13:25.3,15:07.8,3276,Jazz Gaming,40.71458404,-74.04281706,3276,Marin Light Rail,40.71458404,-74.04281706,28583,Customer,1970,0
 2036,16:39.7,50:35.9,3276,NetsGC,40.71458404,-74.04281706,3280,Astor Place,40.7192822,-74.07126188,46627,Customer,1970,0
