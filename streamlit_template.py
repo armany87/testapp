@@ -121,7 +121,7 @@ with stats_container:
 
 
 	# 5 --- You can work with data, change it and filter it as you always do using Pandas or any other library
-	start_station_list = ['All'] + data['start station name'].unique().tolist()
+	start_station_list = ['All'] + data['team'].unique().tolist()
 	end_station_list = ['All'] + data['end station name'].unique().tolist()
 
 
@@ -140,7 +140,7 @@ with stats_container:
 	# collect input usinga list of options in a drop down format
 	# TODO: change the option list to end_station_list and see what happens
 	st.write('Or you can ask the user to select an option from the dropdown menu')
-	s_station = st.selectbox('Which player would you like to see?', start_station_list, key='start_station')
+	s_station = st.selectbox('Which team would you like to see?', start_station_list, key='start_station')
 
 	# display the collected input
 	st.write('You selected the Player: ' + str(s_station))
