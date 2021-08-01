@@ -150,7 +150,7 @@ with stats_container:
     #	if s_station != 'All':
     #display_data = data[data['start station name'] == s_station]
 
-    #	else:
+	else:
 		display_data = data.copy()
 
 
