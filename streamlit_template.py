@@ -45,13 +45,7 @@ import streamlit as st
 st.markdown(
         f"""
 <style>
-    .reportview-container .main .block-container{{
-        max-width: 100%;
-        padding-top: 5rem;
-        padding-right: 5rem;
-        padding-left: 5rem;
-        padding-bottom: 5rem;
-    }}
+    
     img{{
     	max-width:40%;
     	margin-bottom:40px;
