@@ -151,7 +151,7 @@ with stats_container:
     #display_data = data[data['start station name'] == s_station]
 
     #	else:
-    	display_data = data.copy()
+		display_data = data.copy()
 
 
 	# display the dataset in a table format
