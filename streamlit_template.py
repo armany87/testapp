@@ -93,7 +93,7 @@ with header_container:
 	# different levels of text you can include in your app
 	st.title("NBA 2K League Stats Explorer")
 	st.header("WEB APP Created by @IAMHKTR")
-	st.subheader("All Data from https://2kleague.nba.com/stats/)
+	st.subheader("All Data from https://2kleague.nba.com/stats/")
 	
 
 
