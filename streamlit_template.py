@@ -36,7 +36,7 @@ import streamlit as st
 #######################################
 
 
-
+st.set_page_config(layout="wide")
 
 
 # 2 --- you can add some css to your Streamlit app to customize it
