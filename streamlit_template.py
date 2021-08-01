@@ -116,7 +116,7 @@ with stats_container:
 
 
 	# 5 --- You can work with data, change it and filter it as you always do using Pandas or any other library
-	start_station_list = ['All'] + data['start station name'].unique().tolist()
+	start_station_list = ['All'] + data['team'].unique().tolist()
 	
 
 
@@ -142,7 +142,7 @@ with stats_container:
 
 	# you can filter/alter the data based on user input and display the results in a plot
 	if s_station != 'All':
-		display_data = data[data['start station name'] == s_station]
+		display_data = data[data['team'] == s_station]
 
 	else:
 		display_data = data.copy()
