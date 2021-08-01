@@ -91,10 +91,10 @@ with header_container:
 	st.image('logo.png')
 
 	# different levels of text you can include in your app
-	st.title("A cool new Streamlit app")
-	st.header("Welcome!")
-	st.subheader("This is a great app")
-	st.write("check it for yourself, if you don't believe me")
+	st.title("NBA 2K League Stats Explorer")
+	st.header("All Data from https://2kleague.nba.com/stats/")
+	st.subheader("Web App Created by @IAMHKTR")
+	
 
 
 
@@ -121,8 +121,8 @@ with stats_container:
 
 
 	# 5 --- You can work with data, change it and filter it as you always do using Pandas or any other library
-	start_station_list = ['All'] + data['start station name'].unique().tolist()
-	end_station_list = ['All'] + data['end station name'].unique().tolist()
+	start_station_list = ['All'] + data['player id'].unique().tolist()
+	end_station_list = ['All'] + data['player team'].unique().tolist()
 
 
 
