@@ -32,7 +32,7 @@
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(layout="wide")
+
 
 #######################################
 
@@ -46,7 +46,7 @@ st.markdown(
         f"""
 <style>
     .reportview-container .main .block-container{{
-        max-width: 90%;
+        max-width: 100%;
         padding-top: 5rem;
         padding-right: 5rem;
         padding-left: 5rem;
