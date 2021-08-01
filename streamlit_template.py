@@ -143,7 +143,7 @@ with stats_container:
 	s_station = st.selectbox('Which start station would you like to see?', start_station_list, key='start_station')
 
 	# display the collected input
-	st.write('You selected the station: ' + str(s_station))
+	st.write('You selected the Player: ' + str(s_station))
 
 	# you can filter/alter the data based on user input and display the results in a plot
 	st.write('And display things based on what the user has selected')
