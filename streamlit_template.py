@@ -126,7 +126,26 @@ with stats_container:
 
 
 
+	# 6 --- collecting input from the user
+	#		Steamlit has built in components to collect input from users
+
+
 	
+
+	# collect input usinga list of options in a drop down format
+	# TODO: change the option list to end_station_list and see what happens
+	st.write('You can filter data by team below')
+	s_station = st.selectbox('Which team would you like to see?', start_station_list, key='start_station')
+
+	# display the collected input
+	st.write('You selected the Player: ' + str(s_station))
+
+	# you can filter/alter the data based on user input and display the results in a plot
+	if s_station != 'All':
+		display_data = data[data['start station name'] == s_station]
+
+	else:
+		display_data = data.copy()
 
 
 	# display the dataset in a table format
