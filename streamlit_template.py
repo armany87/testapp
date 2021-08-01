@@ -139,7 +139,7 @@ with stats_container:
 
 	# collect input usinga list of options in a drop down format
 	# TODO: change the option list to end_station_list and see what happens
-	st.write('You can filter data by team')
+	st.write('You can filter data by team below')
 	s_station = st.selectbox('Which team would you like to see?', start_station_list, key='start_station')
 
 	# display the collected input
