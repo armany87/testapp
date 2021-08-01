@@ -91,10 +91,10 @@ with header_container:
 	st.image('logo.png')
 
 	# different levels of text you can include in your app
-	st.title("A cool new Streamlit app")
-	st.header("Welcome!")
-	st.subheader("This is a great app")
-	st.write("check it for yourself, if you don't believe me")
+	st.title("NBA 2K League Stats Explorer")
+	st.header("WEB APP Created by @IAMHKTR")
+	st.subheader("All Data from https://2kleague.nba.com/stats/)
+	
 
 
 
