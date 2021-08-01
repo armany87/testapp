@@ -137,7 +137,11 @@ with stats_container:
 
 	
 
-	
+	# collect input usinga list of options in a drop down format
+	# TODO: change the option list to end_station_list and see what happens
+	st.write('Or you can ask the user to select an option from the dropdown menu')
+	s_station = st.selectbox('Which player would you like to see?', start_station_list, key='start_station')
+
 	# display the collected input
 	st.write('You selected the Player: ' + str(s_station))
 
