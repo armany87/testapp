@@ -148,7 +148,8 @@ with stats_container:
 	# you can filter/alter the data based on user input and display the results in a plot
     #st.write('And display things based on what the user has selected')
     #	if s_station != 'All':
-    #display_data = data[data['start station name'] == s_station]
+    #
+		display_data = data[data['start station name'] == s_station]
 
 	else:
 		display_data = data.copy()
