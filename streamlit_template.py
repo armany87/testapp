@@ -146,7 +146,6 @@ with stats_container:
 	st.write('You selected the Player: ' + str(s_station))
 
 	# you can filter/alter the data based on user input and display the results in a plot
-	st.write('And display things based on what the user has selected')
 	if s_station != 'All':
 		display_data = data[data['start station name'] == s_station]
 
